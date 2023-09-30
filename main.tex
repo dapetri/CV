@@ -91,7 +91,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\boldmath$\cdot$}}$}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
 
 \setlength{\footskip}{4.08003pt}
 
@@ -129,24 +130,28 @@
 
 \resumeProjectHeading
 {\textbf{Machine Learning Researcher} $|$ \footnotesize\emph{Karlsruhe Institute of Technology}\vspace{8pt}}{Apr. 2023 -- Nov 2023}
-{\small{Cool University club centered around Computer Science topics} \\ sd}
+{\small{Python, PyTorch (Geometric), NumPy, SciPy, Matplotlib, Git}}
+\vspace*{-5pt}
+\resumeItemListStart
+\resumeItem{Development and training of a Generative Adversarial Imitation Learning algorithm}
+\resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Machine Learning Researcher Intern} $|$ \footnotesize\emph{Karlsruhe Institute of Technology}\vspace{8pt}}{Oct. 2021 -- Apr. 2022}
-{\small{Cool University club centered around Computer Science topics} \\ sd}
+{\textbf{Machine Learning Researcher Intern} $|$ \footnotesize\emph{Karlsruhe Institute of Technology}\space [\href{https://github.com/alr-internship/self-supervised-depth-denoising}{\color{blue}{GitHub}}, \href{https://arxiv.org/abs/2305.05778}{\color{blue}{arXiv}}]\vspace{8pt}}{Oct. 2021 -- Apr. 2022}
+{\small Python, PyTorch (Vision), OpenCV, Open3D, NumPy, Git}
+\vspace*{-5pt}
+\resumeItemListStart
+\resumeItem{Developed a pipeline to record and process image data-sets for self-supervised machine learning}
+\resumeItem{Trained Deep Convolutional Neural Network for denoising depth-maps of 3D images}
+\resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Software Developer Freelance} $|$ \footnotesize\emph{Kuori Materials}\vspace{8pt}}{May 2021 -- Aug. 2021}
-{\small{TypeScript, React, Git}}
-{
-    \resumeItemListStart
-    \resumeItem{Developed a Minecraft server plugin to limit players to one way of replenishing their hunger bar}
-    % \resumeItem{Created intended behavior by making logic complying to the extensive Spigot API in Java}
-    \resumeItem{Used persistent data containers to save and load data, ensuring that it persists across plugin resets}
-    \resumeItem{Optimized UX (User Experience) e.g. prioritized sound design, timing of food drops, supplied saturation level, and had to address many potential workarounds in the numerous ways of destroying the food dropper}
-    % \resumeItem{Published to GitHub and spigotmc.org}
-    \resumeItemListEnd
-}
+{\textbf{Software Developer Freelance} $|$ \footnotesize\emph{Kuori Materials}\space [\href{https://www.kuori-materials.com/}{\color{blue}{kuori.ch}}]\vspace{8pt}}{May 2021 -- Aug. 2021}
+{\small TypeScript, React, HTML/CSS, Node.js, Git}
+\vspace*{-5pt}
+\resumeItemListStart
+\resumeItem{Developed a Minecraft server plugin to limit players to one way of replenishing their hunger bar}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 % -------------------- EDUCATION --------------------
@@ -179,8 +184,10 @@
 \section{Publications}
 \resumeItemListStart
 \resumeItem{\textbf{Learning Adaptive Mesh Refinement Strategies from Human Feedback} [Freymuth, Petri et al., \textit{in prep.}]}
-\resumeItem{\textbf{Multi-Object Self-Supervised Depth Denoising} [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{arXiv: 2305.05778}]}
+\vspace*{-5pt}
+\resumeItem{\textbf{Multi-Object Self-Supervised Depth Denoising} [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{\color{blue}{arXiv: 2305.05778}}]}
 \resumeItemListEnd
+\vspace*{-7pt}
 
 % -------------------- skills --------------------
 \section{Skills}
@@ -204,7 +211,7 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{ChatBuzz} $|$ \footnotesize\emph{TypeScript, HTML/CSS, Node.js, Webpack, Twitch API, Git, Unix Shell, VS Code}}{May 2023 -- Present}
+{\textbf{FernVonFremd Webshop} $|$ \footnotesize\emph{TypeScript, HTML/CSS, Node.js, Webpack, Twitch API, Git, Unix Shell, VS Code}}{May 2023 -- Present}
 \resumeItemListStart
 \resumeItem{Developed a full-stack web application for Twitch livestreamers to display repeated chat messages on OBS}
 \resumeItem{Experimented with Twitch API's OAuth Access Tokens to get chat data from the given channel}
@@ -214,16 +221,6 @@
 \resumeItem{Solved problems relating to asynchronous tasks}
 % \resumeItem{Optimized UX (User Experience) e.g. bought a simple domain name, made documentation, recorded a setup \& demo video, customization through URL arguments}
 % \resumeItem{Published to GitHub and obsproject.com}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{FoodDropper} $|$ \footnotesize\emph{Java, Maven, Spigot API, Git, IntelliJ IDEA}}{August 2022}
-\resumeItemListStart
-\resumeItem{Developed a Minecraft server plugin to limit players to one way of replenishing their hunger bar}
-% \resumeItem{Created intended behavior by making logic complying to the extensive Spigot API in Java}
-\resumeItem{Used persistent data containers to save and load data, ensuring that it persists across plugin resets}
-\resumeItem{Optimized UX (User Experience) e.g. prioritized sound design, timing of food drops, supplied saturation level, and had to address many potential workarounds in the numerous ways of destroying the food dropper}
-% \resumeItem{Published to GitHub and spigotmc.org}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
