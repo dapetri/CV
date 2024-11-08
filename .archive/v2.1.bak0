@@ -127,41 +127,41 @@
 
 
 \begin{minipage}{.95\linewidth}
-	\vspace{28pt}
-	\begin{center}
-		\textbf{\Huge \scshape David Petri} \\ \vspace{8pt}
-		\small
-		\faIcon{envelope}
-		\href{mailto:me@dapetri.com}{me@dapetri.com} $  $
-		\faIcon{phone}
-		\href{tel:+491737777637}{+49173 7777637} $  $
-		\faIcon{code}
-		\href{https://www.dapetri.com}{dapetri.com} $  $
-		\faIcon{linkedin}
-		\href{https://linkedin.com/in/dapetri}{linkedin.com/in/dapetri} $  $
-		\faIcon{github}
-		\href{https://github.com/dapetri}{github.com/dapetri} $  $ \\
-		\faIcon{home}
-		{Salinenstr. 4/4, 74177 Bad Friedrichshall, Germany} $  $
+\vspace{28pt}
+\begin{center}
+    \textbf{\Huge \scshape David Petri} \\ \vspace{8pt}
+    \small
+    \faIcon{envelope}
+    \href{mailto:me@dapetri.com}{me@dapetri.com} $  $
+    \faIcon{phone}
+    \href{tel:+491737777637}{+49173 7777637} $  $
+    \faIcon{code}
+    \href{https://www.dapetri.com}{dapetri.com} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/dapetri}{linkedin.com/in/dapetri} $  $
+    \faIcon{github}
+    \href{https://github.com/dapetri}{github.com/dapetri} $  $ \\
+    \faIcon{home}
+    {Salinenstr. 4/4, 74177 Bad Friedrichshall, Germany} $  $
 
 
-		% \faIcon{envelope}
-		% {me@dapetri.com} $  $
-		% \faIcon{phone}
-		% {+49 173 7777637} $  $
-		% \faIcon{code}
-		% {dapetri.com} $  $
-		% \faIcon{linkedin}
-		% {linkedin.com/in/dapetri} $  $
-		% \faIcon{github}
-		% {github.com/dapetri} $  $
+    % \faIcon{envelope}
+    % {me@dapetri.com} $  $
+    % \faIcon{phone}
+    % {+49 173 7777637} $  $
+    % \faIcon{code}
+    % {dapetri.com} $  $
+    % \faIcon{linkedin}
+    % {linkedin.com/in/dapetri} $  $
+    % \faIcon{github}
+    % {github.com/dapetri} $  $
 
 
-	\end{center}
+\end{center}
 \end{minipage}\hfill
 
 % \begin{picture}(0,0)
-% \put(460,-9){\includegraphics[width=6.5em]{img/profile-pic-2.png}}
+    % \put(460,-9){\includegraphics[width=6.5em]{img/profile-pic-2.png}}
 % \end{picture}
 
 
@@ -255,14 +255,14 @@
 % -------------------- skills --------------------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-	      \begin{tabbing}
-		      \textbf{Languages} ~~~~~~~~~~~~~~~ \={Python, Java, C/C++, SQL, R, Java-/TypeScript} \\
-		      \textbf{Tools} \> {Agile Scrum, ArgoCD, Azure CI/CD, Databricks, Docker, Flask, Flutter, Git,} \\
-		      \>{Kubernetes/HELM, Open3D, OpenCV, PyTorch, React, REST APIs, SpringBoot, VIM} \\
-		      \textbf{Spoken Languages} \> {German (native), English (C2), Italian (B2)}\\
-	      \end{tabbing}
-	      }}
+    \small{\item{
+                    \begin{tabbing}
+                        \textbf{Languages} ~~~~~~~~~~~~~~~ \={Python, Java, C/C++, SQL, R, Java-/TypeScript} \\
+                        \textbf{Tools} \> {Agile Scrum, ArgoCD, Azure CI/CD, Databricks, Docker, Flask, Flutter, Git,} \\
+                        \>{Kubernetes/HELM, Open3D, OpenCV, PyTorch, React, REST APIs, SpringBoot, VIM} \\
+                        \textbf{Spoken Languages} \> {German (native), English (C2), Italian (B2)}\\
+                    \end{tabbing}
+                }}
 \end{itemize}
 
 \vspace{-12pt}

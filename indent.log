@@ -1,0 +1,53 @@
+INFO:  latexindent.pl version 3.24.4, 2024-07-18, a script to indent .tex files
+       latexindent.pl lives here: /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/bin/
+       Fri Nov  8 16:55:28 2024
+       Filenames:
+          .archive/v2.1.tex
+          main.tex
+       total number of files: 2
+INFO:  Processing switches:
+       -s|--silent: Silent mode active (you have used either -s or --silent)
+       -wd|--overwriteIfDifferent: will overwrite ONLY if indented text is different
+       -l|--localSettings: Read localSettings YAML file
+INFO:  Directory for backup files and log file indent.log:
+       .archive
+INFO:  Perl modules are being loaded from the following directories:
+       /usr/share/perl/5.38/FindBin.pm
+       /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/lib/perl5/YAML/Tiny.pm
+       /usr/share/perl/5.38/File/Copy.pm
+       /usr/lib/x86_64-linux-gnu/perl-base/File/Basename.pm
+       /usr/lib/x86_64-linux-gnu/perl-base/Getopt/Long.pm
+       /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/lib/perl5/File/HomeDir.pm
+INFO:  LatexIndent perl modules are being loaded from, for example:
+       /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/lib/perl5/LatexIndent/Document.pm
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/bin/defaultSettings.yaml
+       Reading defaultSettings.yaml (2nd attempt) from /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/bin/../../texmf-dist/scripts/latexindent/defaultSettings.yaml
+       and then, if necessary, /home/loki/.cache/pre-commit/repot_sfv8sk/perl_env-default/bin/LatexIndent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is /home/loki
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  YAML settings read: -l switch
+WARN:  yaml file not found: .archive/v1.tex.yaml not found. Proceeding without it.
+INFO:  Filename: .archive/v2.1.tex (1 of 2)
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  -wd switch active
+       Original body matches indented body, NOT overwriting, no backup files created
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+INFO:  Filename: main.tex (2 of 2)
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  -wd switch active
+       Original body matches indented body, NOT overwriting, no backup files created
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl
