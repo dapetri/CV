@@ -7,6 +7,12 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+% Some definition of functions overlap
+\let\Cross\relax
+\usepackage{MnSymbol,bbding,pifont}
+\let\Cross\relax
+\usepackage{marvosym}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -23,7 +29,6 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage[margin=1in]{geometry}
-\usepackage{MnSymbol,bbding,pifont}
 \usepackage{ifthen}
 \usepackage{calc}
 \usepackage{pifont}
@@ -135,9 +140,9 @@
 		\href{https://github.com/dapetri}{github.com/dapetri} $  $ \\
 		\faIcon{home}
 		{Salinenstr. 4/4, 74177 Bad Friedrichshall, Germany} $  $
-
 	\end{center}
 \end{minipage}\hfill
+
 
 % -------------------- EXPERIENCE --------------------
 \section{Experience}
@@ -184,7 +189,7 @@
 \resumeSubHeadingListEnd
 \vspace{0pt}
 
-% -------------------- skills --------------------
+% -------------------- SKILLS --------------------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
@@ -202,11 +207,9 @@
 % -------------------- PUBLICATIONS --------------------
 \section{Publications}
 \resumeSubHeadingListStart
-\resumeProjectHeading{\textbf{Multi-Object Self-Supervised Depth Denoising} \space [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{{arXiv: 2305.05778}}]}
+\resumeProjectHeading{\textbf{Multi-Object Self-Supervised Depth Denoising} \space [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{{arXiv: 2305.05778}}]}\\
 \resumeSubHeadingListEnd
 \vspace{0px}
-
-% -------------------- SKILLS --------------------
 
 
 % -------------------- EDUCATION --------------------
@@ -219,7 +222,6 @@
 \resumeProjectHeading
 {\textbf{BSc Business and Economics} \space $|$ \space Johannes Gutenberg University of Mainz, Germany -- GPA: 3.5/4}{2015--2018}
 \resumeSubHeadingListEnd
-
 
 % -------------------- PROJECTS --------------------
 
