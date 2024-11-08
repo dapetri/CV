@@ -6,7 +6,12 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
-      - name: Compile document.tex
+      - name: Compile main.tex
         uses: dante-ev/latex-action@master
         with:
           root_file: main.tex
+      - name: Upload main.pdf artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: main.pdf
+          path: CV.pdf
