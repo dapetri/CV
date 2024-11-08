@@ -25,7 +25,7 @@ jobs:
 
       - name: Convert PDF to PNG for README preview
         run: |
-          convert -density 150 cv.pdf[0] -quality 90 cv-preview.png
+          pdftoppm -f 1 -singlefile -png -scale-to 150 main.pdf main-preview
 
       - name: Commit and push preview image to the repository
         run: |
