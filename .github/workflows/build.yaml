@@ -1,4 +1,4 @@
-name: Build
+name: Build & publish
 on: [push]
 jobs:
   build_latex:
@@ -6,12 +6,34 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v1
-      - name: Compile main.tex
+        
+      - name: Compile cv.tex
         uses: dante-ev/latex-action@master
         with:
-          root_file: main.tex
-      - name: Upload main.pdf artifact
+          root_file: cv.tex
+          
+      - name: Upload cv.pdf artifact
         uses: actions/upload-artifact@v4
         with:
-          name: main.pdf
-          path: main.pdf
+          name: cv.pdf
+          path: cv.pdf
+          
+      - name: Set up LaTeX and ImageMagick dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Convert PDF to PNG for README preview
+        run: |
+          convert -density 150 cv.pdf[0] -quality 90 cv-preview.png
+
+      - name: Commit and push preview image to the repository
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          mv cv-preview.png assets/ # Move the image to the assets folder or another location in the repo
+          git add assets/cv-preview.png
+          git commit -m "Add PDF preview image"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
