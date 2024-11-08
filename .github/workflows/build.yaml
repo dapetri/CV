@@ -15,4 +15,3 @@ jobs:
         with:
           name: main.pdf
           path: main.pdf
-          conent_type: pdf
