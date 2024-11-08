@@ -18,10 +18,10 @@ jobs:
           name: cv.pdf
           path: cv.pdf
           
-      - name: Set up LaTeX and ImageMagick dependencies
+      - name: Set up LaTeX and PDF conversion dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick
+          sudo apt-get install -y poppler-utils # Install pdftoppm for PDF conversion
 
       - name: Convert PDF to PNG for README preview
         run: |
