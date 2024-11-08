@@ -29,8 +29,6 @@
 \usepackage{pifont}
 \usepackage{forloop}
 \usepackage{eurosym}
-\usepackage{hyperref}
-\usepackage{ulem}
 
 \newcounter{starnumber}
 \newcommand{\stars}[1]{
@@ -61,7 +59,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Section formatting\\
+% Section formatting
 \titleformat{\section}{
   \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -69,7 +67,7 @@
 % Subsection formatting
 \titleformat{\subsection}{
   \vspace{-4pt}\scshape\raggedright\large
-}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-8pt}]
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -127,35 +125,31 @@
 
 
 \begin{minipage}{.95\linewidth}
-\vspace{28pt}
+\vspace{40pt}
 \begin{center}
     \textbf{\Huge \scshape David Petri} \\ \vspace{8pt}
     \small
-    \faIcon{envelope}
-    \href{mailto:me@dapetri.com}{me@dapetri.com} $  $
-    \faIcon{phone}
-    \href{tel:+491737777637}{+49173 7777637} $  $
-    \faIcon{code}
-    \href{https://www.dapetri.com}{dapetri.com} $  $
-    \faIcon{linkedin}
-    \href{https://linkedin.com/in/dapetri}{linkedin.com/in/dapetri} $  $
-    \faIcon{github}
-    \href{https://github.com/dapetri}{github.com/dapetri} $  $ \\
-    \faIcon{home}
-    {Salinenstr. 4/4, 74177 Bad Friedrichshall, Germany} $  $
-
-
-    % \faIcon{envelope}
-    % {me@dapetri.com} $  $ 
-    % \faIcon{phone}
-    % {+49 173 7777637} $  $
-    % \faIcon{code}
-    % {dapetri.com} $  $
-    % \faIcon{linkedin}
-    % {linkedin.com/in/dapetri} $  $
     % \faIcon{github}
-    % {github.com/dapetri} $  $
-
+    % \href{https://github.com/dapetri}{github.com/dapetri} $  $
+    % \faIcon{code}
+    % \href{https://www.dapetri.com}{dapetri.com} $  $
+    % \faIcon{linkedin}
+    % \href{https://linkedin.com/in/dapetri}{linkedin.com/in/dapetri} $  $
+    % \faIcon{envelope}
+    % \href{mailto:me@dapetri.com}{me@dapetri.com} $  $
+    % \faIcon{phone}{ +49 173 7777637}
+    \faIcon{envelope}
+    {me@dapetri.com} $  $ 
+    \faIcon{phone}
+    {+49 173 7777637} $  $
+    \faIcon{code}
+    {dapetri.com} $  $
+    \faIcon{linkedin}
+    {linkedin.com/in/dapetri} $  $
+    \faIcon{github}
+    {github.com/dapetri} $  $
+    % \faIcon{home}
+    % {Salinenstr. 4/4, 74177 Bad Friedrichshall (DE)} $  $
 
 \end{center}
 \end{minipage}\hfill
@@ -169,62 +163,54 @@
 % -------------------- EXPERIENCE --------------------
 \section{Experience}
 \resumeSubHeadingListStart
-\subsection{\textbf{Schwarz IT} -- Heilbronn, Germany}{\vspace{2px}}
+\vspace{5pt}
 \resumeProjectHeading
-{\textbf{Machine Learning Engineer}}{03/2024 -- present}
+{\textbf{ML Engineer (Computer Vision \& IoT)} \space $|$ \space Schwarz IT -- Heilbronn, Germany\vspace{8pt}}{Mar. 2024 -- \textit{present}}
+\textit{\small{Python, C/C++, Docker, Kubernetes, CI/CD, Azure, Git}}
+\vspace*{-5pt}
 \resumeItemListStart
-% \resumeItem{Leading a junior development team of three machine learning and software engineers}
-\resumeItem{Revamped development workflows and infrastructure by introducing cutting-edge technologies such as Development Containers leading to a streamlined operational process.}
-\resumeItem{Industrialized over 300 parallel anomaly detection microservices for material jams on conveyor belts in PreZero waste sorting plants based on IoT sensor data.}
-\resumeItem{Secured a €600k budget for the Europe-wide rollout across 30 PreZero plants by 2026, following the successful go-live of the material jam anomaly detection pilot that demonstrated measurable impact and scalability.}
-\resumeItem{Achieved a €74k reduction in production downtime losses within two months, improving operational uptime by 7\%.}
-\resumeItem{Industrializing a CLIP-LLM-based meat classification system for a Kaufland meat factory.}
-\resumeItem{Optimizing production processes by replacing two workers per shift, leading to a €1,200/day cost reduction, translating to an annual savings of €400k.}
+\resumeItem{\textbf{Led} a junior development team of three machine learning and software engineers}
+\vspace{7pt}
+\resumeItem{Industrialized \textbf{large-scale anomaly detection microservices (+300)} for material jams on conveyorbelts in PreZero waste sorting plants}
+\resumeItem{\textbf{Prevented a \EUR{74k} loss} in production downtime within the first two months of deployment}
+\vspace{7pt}
+\resumeItem{Industrializing a \textbf{ResNet-8}-based meat classificator for a Kaufland meat factory}
+\resumeItem{Substituting two workers per shift -- \textbf{cutting production costs} by \textbf{\EUR{1200}/day}}
 \resumeItemListEnd
 
-% \subsection{Haimdall -- [haimdall.org]}{\vspace{-5px}}
-% \resumeProjectHeading
-% {\textbf{SDE \& Co-Founder}}{May 2024 -- \textit{present}}
-% \resumeItemListStart
-% \resumeItem{Full-stack development of a mobile alerting app for first aiders on larg-scale events}
-% \resumeItemListEnd
+\vspace{12pt}
 
-\subsection{\textbf{BMW} -- Munich, Germany}{\vspace{-5px}}
 \resumeProjectHeading
-{\textbf{Machine Learning Engineer} (Internship)}{11/2023 -- 03/2024}
+{\textbf{SDE \& Co-Founder} \space $|$ \space Haimdall \space  [haimdall.org] \space \vspace{8pt}}{May 2024 -- \textit{present}}
+\textit{\small{Python, Flask, Flutter, Dart, RestAPI, Docker, Git}}
+\vspace*{-5pt}
+\resumeItemListStart
+\resumeItem{Full-stack development of a \textbf{mobile alerting app} for first aiders on larg-scale events}
+\resumeItemListEnd
+
+\vspace{12pt}
+\resumeProjectHeading
+{\textbf{ML Engineer (Computer Vision)} \space $|$ \space BMW Group -- Munich, Germany\vspace{8pt}}{Nov. 2023 -- Mar. 2024}
+\textit{\small{Python, PyTorch, OpenCV, Anomalib, Git}}
+\vspace*{-5pt}
 \resumeItemListStart
 % \resumeItem{Development and implementation of a \textbf{data preprocessing pipeline} for a \textbf{first-of-a-kind industrial labeled dataset}.}
-\resumeItem{Successfully piloted and deployed a ResNet embedding-based anomaly detection algorithm, identifying 87\% of production errors in V8 engine blocks and reducing the error slippage to below 5\%.}
-% \resumeItem{Initiated the industrial process integration of AI-supported error detection, leading to a more efficient error identification workflow for quality inspectors.}
+\resumeItem{Piloted a \textbf{ResNet} embedding-based \textbf{anomaly detection} algorithm for production errors on V8 engine blocks}
+\resumeItem{Initialized the \textbf{process integration} of \textbf{AI-supported error detection} for the quality inspectors}
 \resumeItemListEnd
 
-\subsection{\textbf{Karlsruhe Institute of Technology}, Germany}{\vspace{-5px}}
+\vspace{12pt}
 \resumeProjectHeading
-{\textbf{Machine Learning Researcher} (Internship)}{02/2023 -- 11/2023}
+{\textbf{ML Researcher \& SDE (Work Study)} \space $|$ \space Karlsruhe Institute of Technology, Germany\vspace{8pt}}{Apr. 2023 -- Nov. 2023}
+\textit{\small{Python, PyTorch, WandB, Git}}
+\vspace*{-5pt}
 \resumeItemListStart
-\resumeItem{Developed the AILP4ASMR algorithm, a generative adversarial imitation and reinforcement learning algorithm to learn adaptive mesh refinement strategies from human demonstrations for the finite element method.}
-% \resumeItem{Achieved a superior solution approximation compared to state-of-the-art algorithms, decreasing the squared error to approximately $10^{-4}$, while using fewer mesh elements.}
+\resumeItem{Developed a \textbf{GNN}-based \textbf{generative adversarial imitation/reinforcement learning} algorithm to learn adaptive mesh refinement strategies for the finite element method to approximate partial differential equations}
+\resumeItem{Laid a foundation for the follow-up paper arXiv:2406.14161}
+% \resumeItem{Developed a \textbf{GNN} based \textbf{imitation/reinforcement learning} algorithm to learn \textbf{Adaptive Mesh Refinement} strategy for the \textbf{Finite Element Method} through expert demonstrations and preferences by using \textbf{Generative Adversarial Imitation Learning} to train the \textbf{Proximal Policy Optimization} \textbf{Reinforcement Learning} algorithm.}
+% \resumeItem{Achieved a \textbf{91\% coverage} with the expert strategy distribution.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-{\textbf{Machine Learning Researcher} (Work Study)}{10/2021 -- 02/2023}
-\resumeItemListStart
-\resumeItem{Developed a data preprocessing pipeline to record, transform, and mask 3D images, optimizing image quality for further processing.}
-\resumeItem{Trained a U-Net model to denoise 3D images, achieving a 60\% reduction in depth-noise, with results published in \href{https://arxiv.org/abs/2305.05778}{{arXiv: 2305.05778}}.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Machine Learning Researcher} (Work Study)}{04/2021 -- 10/2021}
-\resumeItemListStart
-\resumeItem{Conducted a comparative analysis of clustering algorithms (K-Means, Agglomerative Hierarchical Clustering, and Gaussian Mixture Models) across Python (SciPy), R, and MATLAB, identifying performance differences such as a 20\% variance in clustering stability between languages and up to a 10x difference in execution time, leading to recommendations for platform-specific optimizations.}
-\resumeItemListEnd
-
-% \resumeProjectHeading
-% {\textbf{Software Engineer} (Work Study)}{10/2020 -- 04/2021}
-% \resumeItemListStart
-% \resumeItem{Developed, in a team of five, a full-stack microservice-based hospital management system, enhancing patient record handling and internal communication systems.
-% }
-% \resumeItemListEnd
 % \vspace{5pt}
 % \resumeProjectHeading
 % % {\textbf{Machine Learning Researcher Intern} $|$ \footnotesize\emph{Karlsruhe Institute of Technology}\space [\href{https://github.com/alr-internship/self-supervised-depth-denoising}{\color{blue}{GitHub}}, \href{https://arxiv.org/abs/2305.05778}{\color{blue}{arXiv}}]\vspace{8pt}}{Oct. 2021 -- Apr. 2022}
@@ -237,47 +223,42 @@
 % \resumeItem{Achieved a \textbf{60\% reduction of noise} in the depth images.}
 % \resumeItemListEnd
 
-% \subsection{Kuori Materials -- [kuori.ch]}{\vspace{-5px}}
-% \resumeProjectHeading
+\vspace{12pt}
+\resumeProjectHeading
 % {\textbf{Software Developer Freelance} $|$ \footnotesize\emph{Kuori Materials, Basel (CH)}\space [\href{https://www.kuori-materials.com/}{\color{blue}{kuori.ch}}]\vspace{8pt}}{May 2021 -- Aug. 2021}
-% {\textbf{SDE} (Contract)}{May 2021 -- Aug. 2021}
-% \resumeItemListStart
-% \resumeItem{\textbf{Frontend development} for the company's homepage}
-% \resumeItemListEnd
+{\textbf{SDE} \space $|$ \space Kuori Materials -- Basel, Switzerland \space  [kuori.ch] \vspace{8pt}}{May 2021 -- Aug. 2021}
+\textit{\small React, TypeScript, Git}
+\resumeItemListStart
+\resumeItem{Developed the frontend for the company's homepage}
+\resumeItemListEnd
+\vspace*{-5pt}
 % \resumeItemListStart
 % \resumeItem{Developed the company's ebsite according to specifications of the design department.}
 % % \resumeItem{Successfully \textbf{deployed} and \textbf{maintained} the \textbf{first internet presence} of the company.}
 % \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{0pt}
-
-% -------------------- skills --------------------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-                    \begin{tabbing}
-                        \textbf{Languages} ~~~~~~~~~~~~~~~ \={Python, Java, C/C++, SQL, R, Java-/TypeScript} \\
-                        \textbf{Tools} \> {Agile Scrum, ArgoCD, Azure CI/CD, Databricks, Docker, Flask, Flutter, Git,} \\
-                        \>{Kubernetes/HELM, Open3D, OpenCV, PyTorch, React, REST APIs, SpringBoot, VIM} \\
-                        \textbf{Spoken Languages} \> {German (native), English (C2), Italian (B2)}\\
-                    \end{tabbing}
-                }}
-\end{itemize}
-
-\vspace{-12pt}
+\vspace{5pt}
 
 % -------------------- publications --------------------
 \section{Publications}
 
+% \resumeItem{\textbf{Multi-Object Self-Supervised Depth Denoising} [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{\color{blue}{arXiv: 2305.05778}}]}
 
 \resumeSubHeadingListStart
-% \resumeProjectHeading
-% {\textbf{Multi-Object Self-Supervised Depth Denoising} \space {[Kienle \& Petri, 2023, arXiv:2305.05778]}}{}
-\resumeProjectHeading{\textbf{Multi-Object Self-Supervised Depth Denoising} \space [Kienle \& Petri, 2023, \href{https://arxiv.org/abs/2305.05778}{{arXiv: 2305.05778}}]}
+\vspace{5pt}
+\resumeProjectHeading
+{\textbf{Multi-Object Self-Supervised Depth Denoising} \space {[Kienle \& Petri, 2022, arXiv:2305.05778]}\vspace{8pt}}{}
+{\small{Python, PyTorch, OpenCV, Open3D, Git}}
+\vspace*{-5pt}
+\resumeItemListStart
+\resumeItem{Developed a \textbf{data preprocessing pipeline} to record, transform and mask \textbf{3D images}}
+\resumeItem{Trained a \textbf{U-Net} for \textbf{denoising 3D images} achieving a \textbf{60\% reduction in depth-noise}}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{0px}
+
+\vspace*{-5pt}
 
 % -------------------- skills --------------------
 % \section{Skills}
@@ -334,7 +315,20 @@
 % \vspace*{-30pt}
 
 
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%                     \begin{tabbing}
+%                         \textbf{Pragramming Languages} ~~~ \={Python (\textit{Proficient}), Java (\textit{Intermediate}), SQL (\textit{Proficient}), TypeScript (Beginner)} \\
+%                         \textbf{Libraries} \> {PyTorch (3 Y.), OpenCV, Open3D, NumPy, SciPy, Pandas, Matplotlib} \\
+%                         \textbf{Tools/Frameworks} \> {Git (4 Y.), Docker (2 Y.), React (2 Y.)} \\
+%                         \textbf{Spoken Languages} \> {German: \textit{native},\quad English: \textit{C2} - TOEFL 114/120},\ \\ \> Italian: \textit{B2},\quad \quad \quad  Spanish: \textit{B1},\quad French: \textit{DELF B1},\quad Hungarian: \textit{A2}
 
+%                         % \textbf{Certificates} \> {AWS Certified Cloud Practitioner}
+
+
+%                     \end{tabbing}
+%                 }}
+% \end{itemize}
 % -------------------- EDUCATION --------------------
 % \vspace*{-30pt}
 % \section{Education}
@@ -353,17 +347,19 @@
 % \resumeSubHeadingListEnd
 
 \section{Education}
+\vspace{5pt}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{MSc Computer Science} \space $|$ \space Karlsruhe Institute of Technology, Germany -- GPA: 3.8/4}{2021--2023}
+{\textbf{M.Sc. Computer Science} \space $|$ \space Karlsruhe Institute of Technology, Germany --  \textbf{top 10\%}}{2021--2023}
 
 \resumeProjectHeading
-{\textbf{BSc Computer Science} \space $|$ \space Karlsruhe Institute of Technology, Germany -- GPA: 3.5/4}{2018--2021}
+{\textbf{B.Sc. Computer Science} \space $|$ \space Karlsruhe Institute of Technology, Germany \hspace{5pt}}{2018--2021}
 
 \resumeProjectHeading
-{\textbf{BSc Business and Economics} \space $|$ \space Johannes Gutenberg University of Mainz, Germany -- GPA: 3.5/4}{2015--2018}
+{\textbf{B.Sc. Business and Economics} \space $|$ \space Johannes Gutenberg University of Mainz, Germany\hspace{43.5pt} \space}{2015--2018}
 
+\vspace*{5pt}
 \resumeSubHeadingListEnd
 
 % \resumeSubHeadingListStart
