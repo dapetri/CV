@@ -31,8 +31,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          mv cv-preview.png assets/ # Move the image to the assets folder or another location in the repo
-          git add assets/cv-preview.png
+          git add cv-preview.png
           git commit -m "Add PDF preview image"
           git push
         env:
