@@ -28,7 +28,8 @@ jobs:
 
       - name: Convert PDF to PNG for README preview
         run: |
-          pdftoppm -f 1 -singlefile -png cv.pdf .assets/cv-preview
+          pdftoppm -f 1 -singlefile -png cv.pdf cv-preview
+          mv cv-preview.png .assets/
 
       - name: Commit preview image to the repository
         run: |
