@@ -9,18 +9,18 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-        
+
       - name: Compile cv.tex
         uses: dante-ev/latex-action@master
         with:
           root_file: cv.tex
-          
+
       - name: Upload cv.pdf artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv.pdf
           path: cv.pdf
-          
+
       - name: Set up LaTeX and PDF conversion dependencies
         run: |
           sudo apt-get update
@@ -29,12 +29,13 @@ jobs:
       - name: Convert PDF to PNG for README preview
         run: |
           pdftoppm -f 1 -singlefile -png cv.pdf cv-preview
+          mv cv-preview.png .assets
 
       - name: Commit preview image to the repository
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add cv-preview.png
+          git add .assets/cv-preview.png
           git commit -m "Add PDF preview image"
       - name: Push changes
         uses: ad-m/github-push-action@master

@@ -3,6 +3,6 @@ Also, one can use danteev/texlive:latest ([docker hub link](https://hub.docker.c
 
 <div align="center">
   <a href="dapetri.com">
-    <img src="cv-preview.png" alt="PDF preview" width="70%">
+    <img src=".assets/cv-preview.png" alt="PDF preview" width="90%">
   </a>
 </div>
