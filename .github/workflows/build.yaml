@@ -28,9 +28,9 @@ jobs:
 
       - name: Convert PDF to PNG for README preview
         run: |
-          pdftoppm -f 1 -singlefile -png -scale-to 150 cv.pdf cv-preview
+          pdftoppm -f 1 -singlefile -png -scale-to 300 cv.pdf cv-preview
 
-      - name: Commit and push preview image to the repository
+      - name: Commit preview image to the repository
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
